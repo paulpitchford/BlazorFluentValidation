@@ -12,6 +12,9 @@
 
 <EditForm Model="Person" OnValidSubmit="OnSubmit">
     <DataAnnotationsValidator />
+
+    @*By default, the component will check for validators registered with DI first. If it can't find, any it will then try scanning the applications assemblies to find validators using reflection.*@
+    @*You can control this behaviour using the DisableAssemblyScanning parameter. If you only wish the component to get validators from DI, set the value to true and assembly scanning will be skipped.*@
     <FluentValidationValidator DisableAssemblyScanning="true" />
 
     <div class="row mb-3">
