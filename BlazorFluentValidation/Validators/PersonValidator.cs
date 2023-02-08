@@ -11,9 +11,9 @@ namespace BlazorFluentValidation.Validators
                 .NotEmpty().WithMessage("You must enter your first name")
                 .MaximumLength(50).WithMessage("First name cannot be longer than 50 characters");
 
-            RuleFor(p => p.LastName)
-                .NotEmpty().WithMessage("You must enter your last name")
-                .MaximumLength(50).WithMessage("First name cannot be longer than 50 characters");
+            //RuleFor(p => p.LastName)
+            //    .NotEmpty().WithMessage("You must enter your last name")
+            //    .MaximumLength(50).WithMessage("First name cannot be longer than 50 characters");
 
             RuleFor(p => p.Age)
                 .NotNull().WithMessage("You must enter your age.")

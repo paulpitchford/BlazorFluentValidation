@@ -11,6 +11,7 @@
 }
 
 <EditForm Model="Person" OnValidSubmit="OnSubmit">
+    <DataAnnotationsValidator />
     <FluentValidationValidator DisableAssemblyScanning="true" />
 
     <div class="row mb-3">
